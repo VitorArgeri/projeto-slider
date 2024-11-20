@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#ECEFFE, #CED6FB);
+}
+
+.news-list 
+.news-item {
+    list-style: none;
+}
+
+.news-wrapper {
+    max-width: 68.75rem;
+    margin: 0 3.75rem 1.875rem;
+    padding: 1.25rem 0.625rem;
+    overflow: hidden;
+}
+
+.news-list
+.news-item
+.news-link {
+    user-select: none;
+    display: block;
+    background: white;
+    padding: 1.125rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.news-list
+.news-item
+.news-link:active {
+    cursor: grabbing;
+}
+
+.news-list
+.news-item
+.news-link:hover {
+    border-color: #5372F0;
+}
+
+.news-list
+.news-link
+.news-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+
+.news-list
+.news-link
+.badge {
+    color: #5372F0;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 1rem 0 1.125rem;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 3.125rem;
+}
+
+
+.news-list
+.news-link
+.news-title {
+    font-size: 1.20rem;
+    color: black;
+    font-weight: 600;
+}
+
+.news-list
+.news-link
+.news-button {
+    color: #5372F0;
+    height: 2.188rem;
+    width: 2.188rem;
+    border-radius: 50%;
+    margin: 1.875rem 0 0.313rem;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.news-list
+.news-link:hover
+.news-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.news-wrapper
+.swiper-pagination-bullet {
+    height: 0.813rem;
+    width: 0.813rem;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.news-wrapper
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.news-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -2.188rem;
+}
+
+@media screen and (max-width: 768px) {
+    .news-wrapper {
+        margin: 0 0.625rem 1.563rem;
+    }
+
+    .news-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
